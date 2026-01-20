@@ -2,6 +2,8 @@
 
 ### renovate.json
 
+## test rules
+
 ```
 {
 	"extends": ["config:recommended"],

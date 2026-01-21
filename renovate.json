@@ -15,12 +15,10 @@
 			"matchPackageNames": ["renovate-pilot-package"],
 			"matchUpdateTypes": ["major"],
 			"automerge": false
+		},
+		{
+			"matchPackageNames": ["*"],
+			"enabled": false
 		}
-		// {
-		// 	"matchPackageNames": [
-		// 		"*"
-		// 	],
-		// 	"enabled": false
-		// }
 	]
 }

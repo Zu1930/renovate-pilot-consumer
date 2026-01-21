@@ -1,10 +1,10 @@
-import Button from 'renovate-pilot-package'
+import { Button } from 'renovate-pilot-package'
 
 function App() {
 	return (
-		<>
+		<div style={{}}>
 			<Button />
-		</>
+		</div>
 	)
 }
 

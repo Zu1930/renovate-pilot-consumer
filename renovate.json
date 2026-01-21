@@ -1,23 +1,38 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base"],
+	"extends": [
+		"config:recommended"
+	],
 	"dependencyDashboard": true,
-	"labels": ["renovate"],
+	"labels": [
+		"renovate"
+	],
 	"rangeStrategy": "bump",
 	"packageRules": [
 		{
-			"matchPackageNames": ["renovate-pilot-package"],
-			"matchUpdateTypes": ["patch", "minor"],
+			"matchPackageNames": [
+				"renovate-pilot-package"
+			],
+			"matchUpdateTypes": [
+				"patch",
+				"minor"
+			],
 			"automerge": true,
 			"automergeType": "pr"
 		},
 		{
-			"matchPackageNames": ["renovate-pilot-package"],
-			"matchUpdateTypes": ["major"],
+			"matchPackageNames": [
+				"renovate-pilot-package"
+			],
+			"matchUpdateTypes": [
+				"major"
+			],
 			"automerge": false
 		},
 		{
-			"matchPackageNames": ["*"],
+			"matchPackageNames": [
+				"*"
+			],
 			"enabled": false
 		}
 	]

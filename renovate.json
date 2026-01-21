@@ -1,4 +1,17 @@
 {
-	"extends": ["config:recommended"],
-	"dependencyDashboard": true
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:base"],
+	"dependencyDashboard": true,
+	"labels": ["renovate"],
+	"rangeStrategy": "bump",
+	"packageRules": [
+		{
+			"matchPackageNames": ["renovate-pilot-package"],
+			"enabled": true
+		},
+		{
+			"matchPackageNames": ["*"],
+			"enabled": false
+		}
+	]
 }

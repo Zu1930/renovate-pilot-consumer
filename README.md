@@ -2,7 +2,7 @@
 
 ### renovate.json
 
-## test rules 3
+## test rules 4
 
 ```
 {

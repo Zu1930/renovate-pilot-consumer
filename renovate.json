@@ -8,7 +8,7 @@
 			"description": "Use replace strategy for internal package",
 			"matchManagers": ["npm"],
 			"matchPackageNames": ["renovate-pilot-package"],
-			"rangeStrategy": "replace"
+			"rangeStrategy": "pin"
 		},
 		{
 			"description": "Automerge patch/minor updates for internal package",

@@ -1,38 +1,60 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-
-  "extends": ["config:recommended"],
-
+  "extends": [
+    "config:recommended"
+  ],
   "dependencyDashboard": true,
-  "labels": ["renovate"],
-
+  "labels": [
+    "renovate"
+  ],
   "packageRules": [
     {
       "description": "Use replace strategy for internal package",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["renovate-pilot-package"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "renovate-pilot-package"
+      ],
       "rangeStrategy": "replace"
     },
     {
       "description": "Automerge patch/minor updates for internal package",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["renovate-pilot-package"],
-      "matchUpdateTypes": ["patch", "minor"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "renovate-pilot-package"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
       "automerge": true,
       "automergeType": "pr"
     },
     {
       "description": "Do not automerge major updates for internal package",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["renovate-pilot-package"],
-      "matchUpdateTypes": ["major"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "renovate-pilot-package"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": false
     },
     {
       "description": "Disable all other npm dependencies",
-      "matchManagers": ["npm"],
-      "excludePackageNames": ["renovate-pilot-package"],
-      "enabled": false
+      "matchManagers": [
+        "npm"
+      ],
+      "enabled": false,
+      "matchPackageNames": [
+        "!renovate-pilot-package"
+      ]
     }
   ]
 }

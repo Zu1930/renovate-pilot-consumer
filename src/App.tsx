@@ -2,7 +2,7 @@ import { Button } from 'renovate-pilot-package'
 
 function App() {
 	return (
-		<div style={{}}>
+		<div>
 			<Button />
 		</div>
 	)

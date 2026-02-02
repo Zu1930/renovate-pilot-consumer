@@ -16,7 +16,7 @@
 			"matchPackageNames": ["renovate-pilot-package"],
 			"matchUpdateTypes": ["patch", "minor"],
 			"automerge": true,
-			"automergeType": "pr"
+			"automergeType": "branch"
 		},
 		{
 			"description": "Do not automerge major updates for internal package",

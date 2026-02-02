@@ -3,9 +3,6 @@
 	"extends": ["config:best-practices"],
 	"dependencyDashboard": true,
 	"labels": ["renovate"],
-	"schedule": [
-    	"every day"
-  	],
 	"packageRules": [
 		{
 			"description": "Use replace strategy for internal package",

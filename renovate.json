@@ -1,10 +1,18 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["github>renovatebot/.github"]
+	"extends": ["github>renovatebot/.github"],
 	"dependencyDashboard": true,
 	"labels": ["renovate"],
 	"automergeType": "pr",
+	"prCreation": "immediate",
+	"ignorePresets": [":ignoreModulesAndTests"],
+	"ignorePaths": ["**/node_modules/**", "test/**"],
+	"rebaseWhen": "conflicted",
 	"packageRules": [
+		{
+      		"matchUpdateTypes": ["major"],
+      		"addLabels": ["breaking"]
+    	},
 		{
 			"description": "Use replace strategy for internal package",
 			"matchManagers": ["npm"],

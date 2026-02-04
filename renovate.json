@@ -1,9 +1,9 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:best-practices"],
+	"extends": ["github>renovatebot/.github"]
 	"dependencyDashboard": true,
 	"labels": ["renovate"],
-	  "automergeType": "pr",
+	"automergeType": "pr",
 	"packageRules": [
 		{
 			"description": "Use replace strategy for internal package",

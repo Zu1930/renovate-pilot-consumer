@@ -3,6 +3,7 @@
 	"extends": ["config:best-practices"],
 	"dependencyDashboard": true,
 	"labels": ["renovate"],
+	  "automergeType": "pr",
 	"packageRules": [
 		{
 			"description": "Use replace strategy for internal package",

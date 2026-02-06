@@ -33,12 +33,6 @@
 			"matchPackageNames": ["renovate-pilot-package"],
 			"matchUpdateTypes": ["major"],
 			"automerge": false
-		},
-		{
-			"description": "Disable all other npm dependencies",
-			"matchManagers": ["npm"],
-			"enabled": false,
-			"matchPackageNames": ["!renovate-pilot-package"]
 		}
 	]
 }

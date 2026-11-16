@@ -1,7 +1,9 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["github>renovatebot/.github"],
-	"dependencyDashboard": true,
+	"dependencyDashboard": {
+		"enabled": true
+	},
 	"labels": ["renovate"],
 	"automergeType": "pr",
 	"prCreation": "immediate",
